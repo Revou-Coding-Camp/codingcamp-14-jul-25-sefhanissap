@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dive Center Company</title>
+    <link rel="stylesheet" href="CSS/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+</head>
+
+<body>
+    <!-- Header Content -->
+    <header class="flex justify-between items-center p-[8px]">
+        <!-- Logo Icon-->
+        <div> <img src="images/image.png" alt="Logo" class="h-16 w-16 rounded-full bg-center bg-cover"></div>
+
+        <nav class="flex font-semibold">
+            <a class="border rounded-[4px] py-[4px] px-[8px] text-decoration-none" href="#">Home</a>
+            <a class="border rounded-[4px] py-[4px] px-[8px] text-decoration-none" href="#">Our Profile</a>
+            <a class="border rounded-[4px] py-[4px] px-[8px] text-decoration-none" href="#">Message Us</a>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Home Content -->
+        <section id="home-page">
+            <h1 class="text-3xl font-bold text-center my-4"> Hi, <span id="welcome-user">[User]</span>! Welcome to Dive Center</h1>
+            <p class="text-center">
+                Experience the thrill of diving with us! Whether you're a beginner or an experienced diver, 
+                we have something for everyone. Join us for unforgettable underwater adventures.
+            </p>
+            <div class="flex justify-center my-4">
+                <img src="images/home-page.png" alt="Diving Image" class="w-full max-w-md rounded-lg shadow-lg">
+            </div>
+        </section>
+
+        <hr/>
+
+        <!-- About Us Content -->
+        <section id="about-us">
+            <header>
+            <h2 class="text-xl font-semibold text-center my-4">About Us</h2>
+            </header>
+
+            <article>
+            <p class="text-center">
+                Dive Center is a premier diving facility located in the heart of the coastal region. 
+                We specialize in providing top-notch diving experiences, from beginner courses to advanced dives. 
+                Our mission is to promote safe and enjoyable diving practices while fostering a love for the underwater world.
+            </p>
+    <br/>
+            <p class="text-center">
+                Dive Center is dedicated to providing exceptional diving experiences for enthusiasts of all levels. 
+                Established in 2010, our team of certified instructors and guides ensure safety, fun, and unforgettable underwater adventures. 
+                We offer a variety of courses, guided tours, and equipment rentals to help you explore the beauty of the ocean.
+            </p>
+            <div class="flex flex-col items-center my-4">
+                <img src="images/diving.png" alt="Diving Image" class="w-full max-w-md rounded-lg shadow-lg">
+                <p class="mt-2 text-center">Benefits:</p>
+                <ul class="list-disc text-left pl-6">
+                    <li>Certified PADI Instructors</li>
+                    <li>Modern Equipment</li>
+                    <li>Eco-friendly Practices</li>
+                    <li>Custom Dive Packages</li>
+                </ul>
+                <p class="mt-2 text-center">Join us for an unforgettable diving experience!</p>
+            </div>
+            </article>
+        </section>
+
+    <hr/>
+
+        <!-- Message Us Content -->
+        <section id="message-us">
+            <header>
+                 <h2 class="text-xl font-semibold text-center my-4">Message Us</h2>
+            </header>
+
+            <form class="max-w-md mx-auto bg-white p-6 rounded-lg shadow-md flex flex-col gap-3">
+                <label class="font-medium" for="name">Name:</label>
+                <input class="border rounded px-3 py-1.5" type="text" id="name" name="name">
+
+                <label class="font-medium" for="gender">Gender:</label>
+                <div class="flex gap-4 text-sm p-0 mb-2">
+                <label><input type="radio" name="Gender" value="Male"/> Male </label>
+                <label><input type="radio" name="Gender" value="Female"/> Female </label>
+                </div>
+
+                <label class="font-medium" for="email">Email:</label>
+                <input class="border rounded px-3 py-1.5" type="email" id="email" name="email">
+
+                <label class="font-medium" for="message">Message:</label>
+                <textarea class="border rounded px-3 py-2" id="message" name="message" rows="4"></textarea>
+
+                <button onclick="validateForm();" type="button" class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600 transition duration-300">Send Message</button>
+            </form>
+
+            <div id="infoBox" class="max-w-md mx-auto my-6 p-4 bg-blue-100 border border-blue-300 rounded-lg shadow">
+                <h3 class="text-lg font-semibold mb-2 text-blue-800">Contact Information</h3>
+                <p class="mb-1 text-blue-700"><strong>Email:</strong> info@divecenter.com </p>
+                <p class="mb-1 text-blue-700"><strong>Phone:</strong> +62 812-3456-7890</p>
+            <p class="mb-1 text-blue-700"><strong>Location:</strong> Jl. Pantai Indah No. 25, Bali</p>
+            <p class="text-blue-700">Feel free to reach out for any questions or booking inquiries!</p>
+            </div>
+
+            <div id="message-output" class="text-center mt-4">Result:</div>
+            
+        </section>
+    </main>
+
+    <!-- Footer Content -->
+    <footer>
+        <p class="text-center text-black-600 py-4">© 2025 Dive Center Company. All rights reserved.</p>
+    </footer>
+
+
+    <script src="js/script.js"></script>
+</body>
+</html>

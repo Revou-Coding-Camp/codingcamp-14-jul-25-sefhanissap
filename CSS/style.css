@@ -1,0 +1,31 @@
+/* Header Content */
+body {
+    background-color: cornflowerblue;
+}
+
+/* Main Content */
+body {
+    background-color: azure;
+    font-family: emoji;
+    margin: 0;
+    padding: 0;
+}
+
+/* Navbar */
+nav {
+    background-color: azure;
+}
+
+/* form input and text area */
+form{
+    border: 1px solid #ccc;
+    padding: 1rem;
+    border-radius: 4px;
+    width: 100%;
+    font-size: 14px;
+}
+
+/* Footer */
+footer {
+    background-color: cornflowerblue;
+}
